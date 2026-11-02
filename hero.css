@@ -30,6 +30,16 @@
 }
 
 @layer site {
+  #evidence {
+    background-image:
+      linear-gradient(rgba(0, 39, 76, 0.86), rgba(0, 39, 76, 0.86)),
+      url("https://images.pexels.com/photos/14654190/pexels-photo-14654190.jpeg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@layer site {
   #evidence .details-group--aside[hidden] {
     display: none;
   }
