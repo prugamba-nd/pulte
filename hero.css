@@ -1,0 +1,42 @@
+@layer site {
+  #news,
+  #events {
+    color-scheme: light;
+  }
+
+  .event-month {
+    color: var(--brand-blue);
+  }
+
+  .page-header--screen .page-image > img {
+    transform: scaleX(-1);
+  }
+
+  .page-primary .card-image,
+  .page-primary .section-media:not(.details-group--aside) {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+  }
+
+  .page-primary .card-image > img,
+  .page-primary .section-media:not(.details-group--aside) > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@layer site {
+  #evidence .details-group--aside[hidden] {
+    display: none;
+  }
+
+  #evidence .details-group--aside:not([hidden]) > img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
